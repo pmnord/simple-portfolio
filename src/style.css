@@ -1,0 +1,186 @@
+:root {
+  --background-color-light: #f1f1f1;
+  --background-color-dark: #0d1016;
+  --text-color-light: #171d1a;
+  --text-color-dark: #f1f1f1;
+  --border-radius: 2px;
+  --spacing: 4px;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  fill: currentColor;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  margin: var(--spacing);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.serif {
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.mono {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-ts {
+  background-color: #3178c6;
+  color: #fff;
+  padding: 3px 4px;
+  border-radius: var(--border-radius);
+}
+
+.text-react {
+  background-color: #61dafb;
+  color: #000;
+  padding: 3px 4px;
+  border-radius: var(--border-radius);
+}
+
+.index {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.index__about {
+  max-width: 75ch;
+}
+
+.about__heading {
+  font-weight: 400;
+  font-size: 1.85rem;
+  margin-bottom: var(--spacing);
+}
+
+.about__p {
+  line-height: 150%;
+}
+
+.card__image {
+  height: 200px;
+  border-radius: var(--border-radius);
+}
+
+.nav__link {
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.nav__link + * {
+  margin-left: 8px;
+}
+
+.nav__icon {
+  height: 28px;
+  border-radius: var(--border-radius);
+  transition: transform 0.2s linear;
+  backface-visibility: hidden;
+}
+
+.nav__icon:hover {
+  transform: translateY(2px);
+}
+
+.badges__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.badges__badge {
+  font-size: 0rem;
+  transition: font-size 0.2s ease-in-out;
+  height: 1rem;
+  text-align: center;
+  margin-bottom: 5.5rem;
+}
+
+.badges__badge:hover {
+  font-size: 0.8rem;
+}
+
+.badge__label {
+  display: block;
+  margin: 0;
+}
+
+.badge__image {
+  height: 3rem;
+  width: 3.3rem;
+  padding: 0.9rem;
+  color: var('--text-color-dark');
+  transition: transform 0.2s linear;
+  backface-visibility: hidden;
+  box-sizing: content-box;
+}
+
+.badge__image:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  padding: 4px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: dimgray;
+}
